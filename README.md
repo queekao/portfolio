@@ -1,5 +1,6 @@
 ## About The Project
 
+<a name="readme-top"></a>
 Hello, I'm Quee, a passionate software engineer. Welcome to my portfolio! This project showcases my skills and expertise in software development. I will regularly update this portfolio with new projects and updates, so be sure to follow me for the latest news and releases. Feel free to explore my work and get in touch if you have any inquiries or collaboration opportunities. Let's create amazing things together! 😀
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -7,14 +8,16 @@ Hello, I'm Quee, a passionate software engineer. Welcome to my portfolio! This p
 ### Built With
 
 - Development
-- [![Typescript]][https://www.typescriptlang.org/]
-- [![React][React.js]][https://reactjs.org]
-- [![Vite]][https://vitejs.dev/]
+
+* [![Typescript][Typescript]][Typescript-url]
+* [![React][React.js]][React-url]
+* [![Vite][Vite]][Vite-url]
 
 - Deployment
-- [![Docker]][https://www.docker.com/]
-- [![Nginx]][https://www.nginx.com/]
-- [![AWS]][https://aws.amazon.com/]
+
+* [![Docker][Docker]][Docker-url]
+* [![Nginx][Nginx]][Nginx-url]
+* [![AWS][AWS]][AWS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -22,7 +25,7 @@ Hello, I'm Quee, a passionate software engineer. Welcome to my portfolio! This p
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/queekao/portfolio.git
    ```
 2. Install NPM packages
    ```sh
