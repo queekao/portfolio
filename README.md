@@ -1,23 +1,22 @@
+<a name="readme-top"></a>
+
 ## About The Project
 
-<a name="readme-top"></a>
 Hello, I'm Quee, a passionate software engineer. Welcome to my portfolio! This project showcases my skills and expertise in software development. I will regularly update this portfolio with new projects and updates, so be sure to follow me for the latest news and releases. Feel free to explore my work and get in touch if you have any inquiries or collaboration opportunities. Let's create amazing things together! 😀
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
 - Development
 
-* [![Typescript][Typescript]][Typescript-url]
+* [![Typescript][Typescript.dev]][Typescript-url]
 * [![React][React.js]][React-url]
-* [![Vite][Vite]][Vite-url]
+* [![Vite][Vite.dev]][Vite-url]
 
 - Deployment
 
-* [![Docker][Docker]][Docker-url]
-* [![Nginx][Nginx]][Nginx-url]
-* [![AWS][AWS]][AWS-url]
+* [![Docker][Docker.dev]][Docker-url]
+* [![Nginx][Nginx.dev]][Nginx-url]
+* [![AWS][AWS.cloud]][AWS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -49,3 +48,22 @@ Hello, I'm Quee, a passionate software engineer. Welcome to my portfolio! This p
 ### Contact Me
 
 Email:[xeriok92599@gmail.com]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- MARKDOWN IMAGE LINK: https://shields.io/ -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[Typescript.dev]: https://img.shields.io/badge/-Typescript-blue
+[Typescript-url]: https://www.typescriptlang.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vite.dev]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://img.shields.io/badge/-Vite-purple
+[Docker.dev]: https://img.shields.io/badge/-Docker-blue
+[Docker-url]: https://www.docker.com/
+[Nginx.dev]: https://img.shields.io/badge/-Nginx-brightgreen
+[Nginx-url]: https://www.nginx.com/
+[AWS.cloud]: https://img.shields.io/badge/-AWS-yellow
+[AWS-url]: https://aws.amazon.com
