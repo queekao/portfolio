@@ -57,10 +57,13 @@ Email:[xeriok92599@gmail.com]
 
 [Typescript.dev]: https://img.shields.io/badge/-Typescript-blue
 [Typescript-url]: https://www.typescriptlang.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+
+<!-- [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB -->
+
+[React.js]: https://img.shields.io/badge/-React-blue
 [React-url]: https://reactjs.org/
-[Vite.dev]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://img.shields.io/badge/-Vite-purple
+[Vite.dev]: https://img.shields.io/badge/-Vite-purple
+[Vite-url]: https://vitejs.dev/
 [Docker.dev]: https://img.shields.io/badge/-Docker-blue
 [Docker-url]: https://www.docker.com/
 [Nginx.dev]: https://img.shields.io/badge/-Nginx-brightgreen
