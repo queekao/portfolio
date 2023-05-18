@@ -43,7 +43,7 @@ Hello, I'm Quee, a passionate software engineer. Welcome to my portfolio! This p
 ### Trouble Shooting
 
 1.  Dealing with the challenge of large file sizes`maximum size:50MB` was quite a task for me. However, I successfully resolved this issue by utilizing `git-lfs`.
-2.  I recently encountered an issue with the removal of my public zone in Route53. To address this, I updated the `NS (Name Server)` records of my domain with the new public hosted zone. By making this update, I ensured that my domain was properly connected to the correct `public zone` in `Route53`, resolving any potential issues related to the removal of the previous zone. In addition, I enhanced the configuration of `CloudFront` to leverage edge locations for caching web content.
+2.  I recently encountered an issue with the removal of my public zone in Route53. To address this, I updated the `NS (Name Server)` records of my domain with the new public hosted zone. By making this update, I ensured that my domain was properly connected to the correct `public zone` in `Route53`, resolving any potential issues related to the removal of the previous zone. 
 
 ### Contact Me
 
