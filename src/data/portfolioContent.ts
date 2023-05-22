@@ -8,6 +8,7 @@ export interface PortfolioData {
   callengeContent: string
   skillContent: string
   video: string
+  videoPoster: string
 }
 export const portfolioData: PortfolioData[] = [
   {
@@ -18,10 +19,10 @@ export const portfolioData: PortfolioData[] = [
     intro: `This is a project during AVR school I work and learn with several 
     great visual designer and 3D Graphic Designer. 
     `,
-
     introHighlight:
       'With the detail of 3D explosion we built the connection between client and manufacture.',
     video: '../pig.mov',
+    videoPoster: '../pig_poster.png',
     callengeContent: `1️⃣ Applying 3D interactive animation
         2️⃣ Implemented every units animation of products  the most one  is 16 . 
         3️⃣ The CORS problem I could not import 3D model from database to frontend at beginning.Finally I used gcolud installing gsutil to solve this problem.`,
@@ -41,8 +42,11 @@ export const portfolioData: PortfolioData[] = [
     introHighlight:
       'This is online exhibition website,the whole scene is wrapped by a image .You can click and drag to move around 720 degree .',
     video: '../chroma.mov',
-    callengeContent: `1️⃣ Applied Badylon.js to website.
-    2️⃣ Applied audio tour guide, I came out with an idea to loop all the audio and played it in the setInterval after the audio finished and jump to another.`,
+    videoPoster: '../chroma_poster.png',
+
+    callengeContent: `1️⃣ Applied Cubemap with badylonjs after chaning the page dispose and re-render cubemap.
+    2️⃣ Applied audio tour guide, I came out with an idea to loop all the audio and played it in the setInterval after the audio finished and jump to another.
+    3️⃣ Applied shader material(GLSL) to switch the images on plane`,
     skillContent: `Front-end: 
     Vue.js,(verison 2) Vuex, swiper.js, badylon.js,
     websocket, 360 model picture exchanging, scss
@@ -57,6 +61,8 @@ export const portfolioData: PortfolioData[] = [
     intro: `This is a information security activity website(only for cellphone device),
     with complete register system and QRcode scanner for searching the game.`,
     video: '../secpaas.mp4',
+    videoPoster: '../secpaas_poster.png',
+
     callengeContent: `1️⃣ Optimize every phone and different device problem,
     2️⃣ Solving the Anroid keyboard compress problem
     and IOS device resize problem.
@@ -78,16 +84,30 @@ export const portfolioData: PortfolioData[] = [
     introHighlight:
       'This is 3D island website, you can tour around on the island. Cooperated with 3 front-end and 1 back-end',
     video: '../energy.mov',
-    callengeContent: `1️⃣ Optimize every phone and different device problem,
-    2️⃣ Solving the Anroid keyboard compress problem
-    and IOS device resize problem.
-    3️⃣ Use ngrok to solve the https problem in order to open
-    QRcode Scanner. `,
+    videoPoster: '../energy_poster.png',
+
+    callengeContent:
+      '1️⃣ The form captcha validation that I need to detect when the user submit to know if the captcha is wrong',
     skillContent: `Front-end: 
-    Vue.js(version 3), Vue3-qrcode-reader ,Vuex, 
-    Ngrok, scss
+    Vue.js(version 3), ,Vuex,  scss
     
     backend: 
     Php Lavareal, Docker`
+  },
+  {
+    titleImage: '../tycia_logo.png',
+    titleImageAlt: 'tycia',
+    webLink: 'https://dev.tycia.app/',
+    intro:
+      'I am responsible for making back-end system recently working with pagination and query seach feature.',
+    video: '../tycia.mov',
+    videoPoster: '../tycia_poster.png',
+
+    callengeContent:
+      '1️⃣ Cooperate with front-end make a desirable pagination and query search feature',
+    skillContent: `Front-end: 
+    Vue.js(version 3), React-admin(For back-end platform).
+    Database:Firebase.
+    backend:Nestjs.`
   }
 ]

@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from '@emotion/styled'
-import { cardData } from '../data/card'
+import { cardData, CardType } from '../data/card'
 import { Link } from 'react-router-dom'
 
-interface Props {
-  generic: string
-}
 const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+  justify-items: center;
   .wrapper {
     // this is used to avoid cumulative layout shift
     width: 310px;
@@ -31,45 +34,25 @@ const Container = styled.div`
     color: var(--black);
     margin-top: 2.5rem;
     text-align: center;
-    font-weight: lighter;
+    font-weight: 300;
     margin-bottom: 7rem;
   }
 `
-const Card: React.FC<Props> = ({ generic }) => {
+const Card: React.FC = () => {
   return (
     <Container>
-      {generic === 'pig' && (
-        <Link to="/portfolio/pig">
-          <div className="wrapper">
-            <img src={cardData[0].image} alt="pig" />
-          </div>
-        </Link>
-      )}
-      {generic === 'pig' && <h3>{cardData[0].content}</h3>}
-      {generic === 'chroma' && (
-        <Link to="/portfolio/chroma">
-          <div className="wrapper">
-            <img src={cardData[1].image} alt="chroma" />
-          </div>
-        </Link>
-      )}
-      {generic === 'chroma' && <h3>{cardData[1].content}</h3>}
-      {generic === 'secpaas' && (
-        <Link to="/portfolio/secpaas">
-          <div className="wrapper">
-            <img src={cardData[2].image} alt="secpaas" />
-          </div>
-        </Link>
-      )}
-      {generic === 'secpaas' && <h3>{cardData[2].content}</h3>}
-      {generic === 'energy' && (
-        <Link to="/portfolio/energy">
-          <div className="wrapper">
-            <img src={cardData[3].image} alt="energy" />
-          </div>
-        </Link>
-      )}
-      {generic === 'energy' && <h3>{cardData[3].content}</h3>}
+      {cardData.map((value: CardType, index: number) => {
+        return (
+          <Fragment key={index}>
+            <Link to={value.path}>
+              <div className="wrapper">
+                <img src={value.image} alt={value.generic} />
+              </div>
+              <h3>{value.content}</h3>
+            </Link>
+          </Fragment>
+        )
+      })}
     </Container>
   )
 }

@@ -18,11 +18,10 @@ function App(): React.ReactElement {
   `
   return (
     <>
-      {/* <Global styles={css(resetStyles)} /> */}
       <P>
-        Contact us:{' '}
+        Contact:{' '}
         <a href="mailto:xeriok92599@gmail.com" rel="noreferrer">
-          xeriok92599@gmail.com
+          xeriok925999@gmail.com
         </a>
       </P>
       <Routes>

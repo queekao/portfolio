@@ -9,7 +9,7 @@ const Container = styled.div`
     font-size: 6rem;
     color: var(--black);
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
   }
 `
 const NotFound: React.FC = () => {

@@ -31,7 +31,7 @@ const Container = styled.div`
     margin-right: 2rem;
     filter: drop-shadow(0px 0.823492px 12.3524px rgba(0, 0, 0, 0.13));
     @media (max-width: 37.5em) {
-      width: 50%;
+      width: 20rem;
       height: 70px;
     }
   }
@@ -47,6 +47,7 @@ const Container = styled.div`
     margin-bottom: 2rem;
     color: var(--black);
     text-align: center;
+    font-weight: 400;
     @media (max-width: 50em) {
       margin-top: 2rem;
     }
@@ -67,7 +68,7 @@ const Container = styled.div`
     color: var(--black);
     max-width: 50rem;
     text-align: center;
-    font-weight: lighter;
+    font-weight: 300;
     span {
       font-size: 2rem;
       color: var(--black);
@@ -89,6 +90,8 @@ function PortfolioContent(): React.ReactElement {
       setData(portfolioData[2])
     } else if (portfolioId === 'energy') {
       setData(portfolioData[3])
+    } else if (portfolioId === 'tycia') {
+      setData(portfolioData[4])
     } else {
       setData(undefined)
     }
@@ -101,7 +104,6 @@ function PortfolioContent(): React.ReactElement {
       .then(response => response.body)
       .then((rs: any) => {
         const reader = rs.getReader()
-
         return new ReadableStream({
           async start(controller) {
             const shouldRun = true
@@ -127,7 +129,10 @@ function PortfolioContent(): React.ReactElement {
       .then(rs => new Response(rs))
       // Create an object URL for the response
       .then(response => response.blob())
-      .then(blob => URL.createObjectURL(blob))
+      .then(blob => {
+        const videoBlob = new Blob([blob], { type: 'video/mp4' })
+        return URL.createObjectURL(videoBlob)
+      })
       // Update image
       .then(url => setUrl(url))
       .catch(error => {
@@ -163,7 +168,7 @@ function PortfolioContent(): React.ReactElement {
         {data?.intro}
         <span>{data?.introHighlight}</span>
       </p>
-      <video src={url} autoPlay loop />
+      <video src={url} autoPlay loop poster={data?.videoPoster} />
       <div>
         <h2>Callenge</h2>
         <p>{data?.callengeContent}</p>
